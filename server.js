@@ -1,7 +1,11 @@
 const express = require('express');
+// dotenv allows you to separate secrets from your source code
 const dotenv = require('dotenv');
+// simplifies the process of logging requests to your application.
 const morgan = require('morgan');
+// responsible for parsing the incoming request bodies in a middleware before you handle it
 const bodyparser = require("body-parser");
+
 const path = require('path');
 
 const connectDB = require('./server/database/connection');
